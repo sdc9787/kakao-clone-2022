@@ -1,0 +1,46 @@
+.screen-header {
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px var(--horizontal-space);
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+  background-color: white;
+}
+
+.screen-header__titie {
+  font-weight: 600;
+  font-size: 24px;
+}
+.screen-header__icons span {
+  margin-left: 20px;
+}
+
+.screen-header__find__gear {
+  background-color: tomato;
+  width: 5px;
+  height: 5px;
+  border-radius: 2.5px;
+  font-weight: 600;
+  font-size: 13px;
+  position: absolute;
+  right: 15px;
+  top: 37px;
+}
+
+@keyframes rotateCog {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+.screen-header__icons .fa-gear:hover {
+  animation: rotateCog 3s linear infinite;
+}

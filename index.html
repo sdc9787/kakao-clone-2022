@@ -28,14 +28,26 @@
         log in with your email or phone number.
       </p>
     </header>
-    <form class="login-form">
-      <input type="text" placeholder="Email or phone number" />
-      <input type="password" placeholder="Password" />
-      <input type="submit" value="Log In" />
-      <input type="submit" value="Sign up" />
+    <form action="frients.html" method="get" class="login-form">
+      <input
+        name="username"
+        type="text"
+        class="login-form__input"
+        placeholder="Email or phone number"
+      />
+      <input
+        name="password"
+        type="password"
+        class="login-form__input"
+        placeholder="Password"
+      />
+      <input type="submit" class="login-form__btn" value="Log In" />
+      <input type="submit" class="login-form__btn" value="Sign up" />
       <a href="#">Find Kakao Account or Password</a>
     </form>
-
+    <div class="no-mobile">
+      <span>Your screen is too big</span>
+    </div>
     <script
       src="https://kit.fontawesome.com/3ba72eb305.js"
       crossorigin="anonymous"
